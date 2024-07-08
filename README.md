@@ -20,5 +20,11 @@ Every Vue file contains 3 blocks :
 
 ## Binding HTML
 Use v-html directive
+
 ## Binding to Attributes 
-<div v-bind:id="dynamicId"></div>
+v-bind:id="dynamicId"
+
+button v-bind:disabled="isDisabled">View Profile<
+
+## Binding to Class
+h2 v-bind:class="isCurrentEmployee ? 'currentemployee' : 'exemployee'">{{ isCurrentEmployee ? 'Current Employee' : 'Exemployee' }}</h2
