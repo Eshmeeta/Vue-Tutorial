@@ -28,3 +28,8 @@ button v-bind:disabled="isDisabled">View Profile<
 
 ## Binding to Class
 h2 v-bind:class="isCurrentEmployee ? 'currentemployee' : 'exemployee'">{{ isCurrentEmployee ? 'Current Employee' : 'Exemployee' }}</h2
+
+#Reactivity
+Reactivity in Vue.js ensures that your web page stays in sync with the data changes automatically, without you having to manually update the HTML.
+
+
