@@ -58,3 +58,21 @@ It enables automatic scope sharing.
 
 # Computed Properties
 It is used to make the template simple. A computed property automatically tracks its reactive dependencies. 
+
+# Binding HTML Classes
+We can bind :class to an array to apply a list of classes:
+
+
+const activeClass = ref('active')
+const errorClass = ref('text-danger')
+template
+<div :class="[activeClass, errorClass]"></div>
+
+# Binding Inline Styles
+:style supports binding to JavaScript object values - it corresponds to an HTML element's style property:
+
+js
+const activeColor = ref('red')
+const fontSize = ref(30)
+template
+<div :style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
