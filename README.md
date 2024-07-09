@@ -31,6 +31,7 @@ h2 v-bind:class="isCurrentEmployee ? 'currentemployee' : 'exemployee'">{{ isCurr
 
 
 
+
 # Reactivity
 Reactivity in Vue.js ensures that your web page stays in sync with the data changes automatically, without you having to manually update the HTML.
 
@@ -53,3 +54,7 @@ For text interpolation, ref values are automatically unwrapped.
 
 ## Script Setup
 It enables automatic scope sharing.
+
+
+# Computed Properties
+It is used to make the template simple. A computed property automatically tracks its reactive dependencies. 
