@@ -50,3 +50,6 @@ Templates:
 Top-level ref properties are automatically unwrapped in templates.
 Nested ref properties need .value to access their value.
 For text interpolation, ref values are automatically unwrapped.
+
+## Script Setup
+It enables automatic scope sharing.
