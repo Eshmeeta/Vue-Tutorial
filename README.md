@@ -83,4 +83,12 @@ template
 3. v-if-else
 4. v-show: Toggles the display property of CSS.
 5. v-for
-   When v-if and v-for are both used on the same element, v-if will be evaluated first. 
+   When v-if and v-for are both used on the same element, v-if will be evaluated first.
+
+# List Rendering 
+
+## v-for
+It is a good practice to use key with v-for. Key value should be unique.
+You can also add index.
+It can be used with v-if and computed properties also (use of filter).
+
