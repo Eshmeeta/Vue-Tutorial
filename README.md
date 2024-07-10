@@ -76,3 +76,11 @@ const activeColor = ref('red')
 const fontSize = ref(30)
 template
 <div :style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
+
+# Conditional Rendering
+1. v-if
+2. v-else
+3. v-if-else
+4. v-show: Toggles the display property of CSS.
+5. v-for
+   When v-if and v-for are both used on the same element, v-if will be evaluated first. 
