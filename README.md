@@ -115,4 +115,8 @@ Method Event Handler
 ## Key Modifiers
 Key modifiers in Vue.js allow you to listen for specific keyboard keys when handling keyboard events. This way, your event handler only runs if a particular key is pressed.
  
+# Form Binding
+v-model : Helps in 2 way binding.
+Use of v-model with text,checkboxes,radio,multiline text,etc
+
 
