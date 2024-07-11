@@ -92,3 +92,27 @@ It is a good practice to use key with v-for. Key value should be unique.
 You can also add index.
 It can be used with v-if and computed properties also (use of filter).
 
+# Event Handling 
+
+Event Handler - v-on or shortcut = @ 
+2 types : 
+Inline Event Handler.
+Method Event Handler
+## Inline Handler : 
+<button @click: "count++">Increase</button>
+ ## Calling methods in Inline Handler:
+ <button @click="say('hello')">Say hello</button>
+ ## Accessing Event Argument in Inline Handlers
+   <button @click="warn('Personal Details Cannot be provided to external employees.',$event)">Request Contact Number</button>
+## Event Modifiers
+.stop
+.prevent
+.self
+.capture
+.once
+.passive
+
+## Key Modifiers
+Key modifiers in Vue.js allow you to listen for specific keyboard keys when handling keyboard events. This way, your event handler only runs if a particular key is pressed.
+ 
+
