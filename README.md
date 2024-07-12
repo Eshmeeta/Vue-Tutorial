@@ -119,4 +119,5 @@ Key modifiers in Vue.js allow you to listen for specific keyboard keys when hand
 v-model : Helps in 2 way binding.
 Use of v-model with text,checkboxes,radio,multiline text,etc
 
-
+#  Watchers
+Think of a watcher as someone who is always looking at a clock and telling you every time the hour changes so you can do something special, like ringing a bell. In Vue, watchers help you react to changes in your data by triggering functions when the data updates.
