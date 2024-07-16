@@ -121,3 +121,8 @@ Use of v-model with text,checkboxes,radio,multiline text,etc
 
 #  Watchers
 Think of a watcher as someone who is always looking at a clock and telling you every time the hour changes so you can do something special, like ringing a bell. In Vue, watchers help you react to changes in your data by triggering functions when the data updates.
+
+
+# Props 
+Used to pass data from parent component to child component.
+
