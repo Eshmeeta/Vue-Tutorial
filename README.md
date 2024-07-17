@@ -149,4 +149,58 @@ const emit = defineEmits({
 function submitForm(email, password) {
   emit('submit', { email, password })
 }
+
+
 </script>
+
+# Component v-model 
+Let's use a practical example to understand how defineModel() can be used in a real-world application. Suppose we have a simple form where users can input and update their name. We'll have a parent component that contains the form and a child component that handles the input field.
+
+Child Component (NameInput.vue)
+This component contains an input field for the user's name. It uses defineModel() to bind the input value to the parent component.
+
+vue
+Copy code
+<template>
+  <div>
+    <label for="name">Name: </label>
+    <input id="name" v-model="model.value" /> <!-- Bind the input to the model -->
+  </div>
+</template>
+
+<script setup>
+const model = defineModel() // Create a two-way binding model
+</script>
+Parent Component (UserProfile.vue)
+This component uses the child component to get and update the user's name.
+
+vue
+Copy code
+<template>
+  <div>
+    <h2>User Profile</h2>
+    <NameInput v-model="userName" /> <!-- Bind parent data to the child component -->
+    <p>Your name is: {{ userName }}</p> <!-- Display the user's name -->
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import NameInput from './NameInput.vue'
+
+const userName = ref('') // Initialize the user's name
+</script>
+How It Works
+Child Component (NameInput.vue):
+
+Contains an input field bound to model.value created by defineModel().
+When the user types in the input field, model.value updates.
+Parent Component (UserProfile.vue):
+
+Binds its userName data to the child component’s model using v-model.
+Displays the user's name with Your name is: {{ userName }}.
+What You See
+The initial user name is empty.
+When the user types their name into the input field in the NameInput child component, model.value updates.
+The userName in the parent component also updates automatically because of the two-way binding.
+The updated name is displayed in the parent component
