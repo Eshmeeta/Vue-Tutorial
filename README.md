@@ -126,3 +126,27 @@ Think of a watcher as someone who is always looking at a clock and telling you e
 # Props 
 Used to pass data from parent component to child component.
 
+# Events 
+Used to pass events from child to parent component.
+
+## Event Validation 
+<script setup>
+const emit = defineEmits({
+  // No validation
+  click: null,
+
+  // Validate submit event
+  submit: ({ email, password }) => {
+    if (email && password) {
+      return true
+    } else {
+      console.warn('Invalid submit event payload!')
+      return false
+    }
+  }
+})
+
+function submitForm(email, password) {
+  emit('submit', { email, password })
+}
+</script>
